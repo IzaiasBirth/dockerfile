@@ -1,0 +1,3 @@
+liba
+libb
+libc
