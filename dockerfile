@@ -14,3 +14,13 @@ RUN npm build
 COPY ./requirements.txt requirements.txt
 
 ADD ./files.tar.gz ./
+
+RUN useradd izaias
+
+USER izaias
+
+EXPOSE 8080
+
+ENTRYPOINT [ "ping" ]
+
+CMD ["localhost"]
